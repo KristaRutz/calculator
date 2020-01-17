@@ -11,75 +11,47 @@
     <div class="container">
       <h1 class="jumbotron">Calculator</h1>
 
-      <div class="row"
-      >
-        <div id="addition" class="well col-md-3">
-          <h3>Add</h3>
-          <form id="add">
-            <div class="form-group">
-              <label for="add1">1st number:</label>
-              <input id="add1" class="form-control" type="text">
-            </div>
-            <div class="form-group">
-              <label for="add2">2nd number:</label>
-              <input id="add2" class="form-control" type="text">
-            </div>
-            <button type="submit" class="btn btn-default">Add!</button>
-          </form>
-          <div id="addition-output"></div>
+      <form id="calculator">
+
+        <div class="form-group">
+          <label for="input1">1st number:</label>
+          <input id="input1" class="form-control" type="text">
         </div>
 
-        <div id="subtraction" class="well col-md-3">
-          <h3>Subtract</h3>
-          <form id="subtract">
-            <div class="form-group">
-              <label for="subtract1">1st number:</label>
-              <input id="subtract1" class="form-control" type="text">
-            </div>
-            <div class="form-group">
-              <label for="subtract2">2nd number:</label>
-              <input id="subtract2" class="form-control" type="text">
-            </div>
-            <button type="submit" class="btn btn-default">Subtract!</button>
-          </form>
-          <div id="subtraction-output"></div>
+        <div class="form-group">
+          <label for="input2">2nd number:</label>
+          <input id="input2" class="form-control" type="text">
         </div>
-
-        <div id="multiplication" class="well col-md-3">
-          <h3>Multiply</h3>
-          <form id="multiply">
-            <div class="form-group">
-              <label for="multiply1">1st number:</label>
-              <input id="multiply1" class="form-control" type="text">
-            </div>
-            <div class="form-group">
-              <label for="multiply2">2nd number:</label>
-              <input id="multiply2" class="form-control" type="text">
-            </div>
-            <button type="submit" class="btn btn-default">Multiply!</button>
-          </form>
-          <br>
-          <label for="multiplication-output">Result:</label>
-          <div id="multiplication-output"></div>
+        
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="add" checked>
+            add
+          </label>
         </div>
-
-        <div id="division" class="well col-md-3">
-          <h3>divide</h3>
-          <form id="divide">
-            <div class="form-group">
-              <label for="divide1">1st number:</label>
-              <input id="divide1" class="form-control" type="text">
-            </div>
-            <div class="form-group">
-              <label for="divide2">2nd number:</label>
-              <input id="divide2" class="form-control" type="text">
-            </div>
-            <button type="submit" class="btn btn-default">Divide!</button>
-          </form>
-          <div id="division-output"></div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="subtract">
+            subtract
+          </label>
         </div>
-
-      </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="multiply">
+            multiply
+          </label>
+        </div>        
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="divide">
+            divide
+          </label>
+        </div>        
+        <button type="submit" class="btn">Go!</button>
+      
+      </form>
+      
+      <div id="output"></div>
 
     </div>
   </body>
